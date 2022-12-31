@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple sine Wave</title>
+    <style>
+        section{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+          
+        }
+        section #dot{
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            background-color: aquamarine;
+           
+        }
+       
+    </style>
+</head>
+<body>
+    <section>
+        <div id="dot">
+            
+        </div>
+
+        <script>
+            
+            for(i = 1;i<20;i++){
+                var dot = document.getElementById("dot");
+                var angle = (2*Math.PI*i)/20; 
+                var s = Math.sin(angle);
+                console.log("angle is "+angle +"sin is "+ s);
+                
+                dot.style.transform = `translateX(${i}) translateY(${s})`;
+            }
+            
+            dot.style.transition = "20s";
+
+        </script>
+    </section>
+</body>
+</html>

@@ -1,0 +1,273 @@
+.main-container{
+    border : solid 2px green;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+
+}
+.main-container>div{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+}
+.main-container>#redArea{
+    left: 0;
+    background-color: brown;
+    text-align: center;
+}
+.main-container>#greenArea{
+    right: 0;
+    background-color: lightseagreen;
+}
+.main-container>#yellowArea{
+    left: 0;
+    bottom: 0;
+    background-color: darkgoldenrod;
+}
+.main-container>#pinkArea{
+    right: 0;
+    bottom: 0;
+    background-color: deeppink;
+}
+#redArea>div:nth-child(1){
+    position: absolute;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    border-bottom-right-radius: 1000px;
+}
+#redArea>div:nth-child(2){
+    position: absolute;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    right: 0;
+    border-bottom-left-radius: 1000px;
+}
+#redArea>div:nth-child(3){
+    position: absolute;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    right: 0;
+    bottom: 0;
+  
+}
+#redArea>div:nth-child(3)>div{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    background-color: red;
+    bottom: 0;
+    right: 0;
+    border-top-left-radius: 100px;
+}
+#redArea>div:nth-child(4){
+   
+    position: absolute;
+    background-color: white;
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+   top:50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+  
+  
+}
+#redArea>div:nth-child(4)>div{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color: red;
+
+    top:50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+
+}
+
+/*green*/
+#greenArea>div:nth-child(1){
+    position: absolute;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    border-bottom-right-radius: 1000px;
+}
+#greenArea>div:nth-child(2){
+    position: absolute;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    right: 0;
+    border-bottom-left-radius: 1000px;
+}
+#greenArea>div:nth-child(3){
+    position: absolute;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    left: 0;
+    bottom: 0;
+  
+}
+#greenArea>div:nth-child(3)>div{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    background-color: red;
+    bottom: 0;
+    left: 0;
+    border-top-right-radius: 100px;
+}
+#greenArea>div:nth-child(4){
+   
+    position: absolute;
+    background-color: white;
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+   top:50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+  
+  
+}
+#greenArea>div:nth-child(4)>div{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color: red;
+
+    top:50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+
+}
+
+/*yellow area*/
+#yellowArea>div:nth-child(1){
+    position: absolute;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    bottom: 0;
+    border-top-right-radius: 1000px;
+}
+#yellowArea>div:nth-child(2){
+    position: absolute;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    right: 0;
+    bottom: 0;
+    border-top-left-radius: 1000px;
+}
+#yellowArea>div:nth-child(3){
+    position: absolute;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    right: 0;
+    top: 0;
+  
+}
+#yellowArea>div:nth-child(3)>div{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    background-color: red;
+    top: 0;
+    right: 0;
+    border-bottom-left-radius: 100px;
+}
+#yellowArea>div:nth-child(4){
+   
+    position: absolute;
+    background-color: white;
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+   top:50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+  
+  
+}
+#yellowArea>div:nth-child(4)>div{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color: red;
+
+    top:50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+
+}
+
+/*pink area*/
+#pinkArea>div:nth-child(1){
+    position: absolute;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    bottom: 0;
+    border-top-right-radius: 1000px;
+}
+#pinkArea>div:nth-child(2){
+    position: absolute;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    right: 0;
+    bottom: 0;
+    border-top-left-radius: 1000px;
+}
+#pinkArea>div:nth-child(3){
+    position: absolute;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    left: 0;
+    top: 0;
+  
+}
+#pinkArea>div:nth-child(3)>div{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    background-color: red;
+    top: 0;
+    left: 0;
+    border-bottom-right-radius: 100px;
+}
+#pinkArea>div:nth-child(4){
+   
+    position: absolute;
+    background-color: white;
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+   top:50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+  
+  
+}
+#pinkArea>div:nth-child(4)>div{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color: red;
+
+    top:50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+
+}
+
+

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>simple web layout</title>
+
+<style>
+    header{
+        height: 125px;
+        position: relative;
+        box-shadow: 0px 0px 30px -20px gray;
+
+        
+    }
+    header>img{
+        margin: 16px;
+        width: 220px;
+        height: 100px;
+      
+    }
+    header>ul{
+        position: absolute;
+        height: 20px;
+        right: 10px;
+        bottom: 0;
+        top: 0;
+        margin: auto;
+        list-style: none;
+
+    }
+    header>ul>li{
+        display: inline-block;
+        /*inline-block : has both inline
+       and block behaviors(not all block behaviors)*/
+
+       padding:0 5px;
+    }
+    header>ul>li:hover{
+        cursor: pointer;
+    }
+    /* Main sect*/
+    body>main{
+        position: relative;
+
+    }
+    main>nav{
+        position: absolute;
+        background-color: aqua;
+        top: 0;
+        bottom: 0;
+        width: 200px;
+        min-height: 100vh;
+    }
+    main>section{
+        /* position: relative;
+        width: 1000px;
+        left: 200px; */
+        margin-left:200px ;
+        padding: 5px;
+        bottom: 0;
+        min-height: 1000px;
+    }
+    main>nav>ul{
+        list-style: none;
+    }
+    main>nav>ul>li{
+        padding-bottom: 10px;
+        margin-top: 30px;
+    }
+    main>section>section{
+        position: relative;
+        height: 100px;
+    }
+    main>section>section>div{
+        position: absolute;
+        width: calc(100%/3);
+        height: 100%;
+        padding: 2px;
+        border: solid white 2px;
+    }
+    main>section>section>div:nth-child(1){
+        background-image: url("assects/img/25c7827a20a46a5a67b4d04d7bfd1cf9.jpg");
+        background-size: cover;
+        left: 0;
+    }
+    main>section> section>div:nth-child(2){
+        background-image: url("assects/img/25c7827a20a46a5a67b4d04d7bfd1cf9.jpg");
+        background-size: cover;
+        left: calc(100%/3);
+    }
+    main>section>section>div:nth-child(3){
+        background-image: url("assects/img/25c7827a20a46a5a67b4d04d7bfd1cf9.jpg");
+        background-size: cover;
+        left: calc((100%/3)*2);
+    }
+    footer{
+        position: relative;
+        height: 80px;
+        background-color: rgb(179, 174, 174);
+    }
+    footer>p{
+        margin-top: 0;
+        text-align: center;
+        padding: 20px;
+        color: white;
+
+
+    }
+</style>
+
+</head>
+<body>
+   <header>
+    <img src="assects/img/25c7827a20a46a5a67b4d04d7bfd1cf9.jpg" alt="" srcset="">
+    <ul>
+        <li>Home</li>
+        <li>Services</li>
+        <li>Contact us</li>
+        <li>about us</li>
+
+    </ul>
+
+   </header>
+
+   <main>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Services</li>
+            <li>Contact us</li>
+            <li>about us</li>
+
+        </ul>
+    </nav>
+    <section>
+        <section>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolorum adipisci amet ex illum dolor quaerat magnam voluptatum voluptatem esse, consectetur laboriosam beatae ipsam sunt earum obcaecati soluta quas quidem.</p>
+        <p>Nostrum veniam consectetur ea architecto voluptate unde tempore eligendi nemo deleniti praesentium? Pariatur eum possimus voluptatum, repellat eveniet similique aperiam, rerum quos, sapiente tempore beatae ab accusamus quasi. Possimus, veritatis!</p>
+        <p>Possimus mollitia magni veniam molestias ratione, debitis odio suscipit accusamus eum! Quos natus nisi molestias alias quod vero veniam distinctio hic ullam. Beatae, ut et explicabo facilis voluptatibus voluptas. Illum.</p>
+        <p>Nisi optio quod hic architecto, et quasi distinctio obcaecati consequuntur eligendi, voluptates harum dolor reprehenderit quisquam nemo, cumque laudantium voluptate. Voluptatem nam temporibus explicabo aliquam facilis harum deserunt! Debitis, dolorem.</p>
+        <p>Sed modi neque exercitationem ratione hic vitae debitis quis totam saepe eveniet facilis harum asperiores sint incidunt ipsa in iste beatae atque minima nam fugiat, expedita quia laboriosam. Modi, veritatis!</p>
+        <p>Ratione ex deleniti eveniet perferendis eaque doloribus excepturi non, officia fuga nemo quasi? Sed cumque nobis aliquam iure, illum expedita a ex laborum cum hic sunt distinctio facere! Nam, est!</p>
+        <p>Accusantium autem magni aperiam, ex vitae atque ducimus quas voluptatum numquam, necessitatibus delectus voluptate ratione quia nostrum labore reprehenderit neque, ab accusamus animi! Voluptates accusantium, et odio architecto aut totam!</p>
+        <p>Ut quisquam et inventore quo eos sequi dolorem quae animi dolores, distinctio non amet deleniti quam tenetur molestiae? Quidem ipsam nostrum animi harum amet ratione consequatur iusto, illum tenetur ducimus.</p>
+    </section>
+    
+   </main>
+   <footer>
+        <p><small> developed by dhanushk</small></p>
+   </footer>
+</body>
+</html>

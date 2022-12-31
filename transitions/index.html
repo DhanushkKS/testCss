@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+
+    <style>
+        section{
+          width: 100px;
+          height: 100px;          
+          border-radius: 100%;          
+          transition: all 2s;        
+          color: aliceblue;
+        }
+
+        section::before{
+            transform: rotate(0deg);
+            background: blue;
+            display: inherit; 
+            width: inherit;
+            height: inherit;
+            content: '';
+            border: 10px solid green;
+            border-top: 10px solid red;
+            border-radius: inherit;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        section:hover::before{
+             transform: rotate(720deg);
+            transition: all 2s; 
+            cursor: pointer;
+        }
+        section>h1{
+           
+             width:max-content;
+            height: max-content;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            transform: rotate(0deg);
+            border-radius: inherit; 
+            transition: all 2s;
+        }
+        section:hover::before h1{
+        
+            transform: rotate(-720deg);
+            transition: all 2s; 
+        }
+        
+    </style>
+
+</head>
+<body>
+    <section>
+        <!-- <div></div> -->
+        <h1>hello</h1>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, in illo saepe molestias, ipsam cum consequatur dolore provident ad error placeat nemo sint fuga inventore quibusdam. Repellendus, voluptatibus. Voluptates, voluptas.
+    </section>
+    
+</body>
+</html>

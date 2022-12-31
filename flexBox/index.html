@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box</title>
+    <style>
+        .container{
+            position: relative;
+            border: 2px solid yellow;
+            height: 300px;
+            display: flex;
+            
+            flex-wrap: wrap;
+            
+        }
+        .container .test{
+            margin: 4px;
+            width: 400px;
+            height: 100px;
+           
+           
+           
+            /* border-radius: 3px; */
+            background: linear-gradient(#9c63ba,#9b78c6);
+            
+        flex-shrink: 1      ;
+            /* flex-basis: 100px; */
+        }
+        .container .test:nth-child(1){
+            /* flex-grow: 1; */
+        }
+        .container .test:nth-child(2){
+            /* flex-grow: 2; */
+        }
+        .container .test:nth-child(3){
+            /* flex-grow: 3; */
+        }
+        .container .test:nth-child(4){
+            /* flex-grow: 4; */
+        }
+        .container .test:nth-child(5){
+            /* flex-grow: 1; */
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="test">1</div>
+        <div class="test">2</div>
+        <div class="test">3</div>
+        <div class="test">4</div>
+        <div class="test">5</div>
+    </section>
+</body>
+</html>

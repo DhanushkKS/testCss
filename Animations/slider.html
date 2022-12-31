@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+
+<style>
+
+    main{
+            width: 500px;
+            height: 300px;
+            /* border: solid red 2px; */
+           position: absolute;
+           left: 0;
+           right: 0;
+           top: 0;
+           bottom: 0;
+           margin: auto;
+           overflow: hidden; 
+    }
+
+    main section{
+        height: 100%;
+        /* border: green 1px solid ; */
+        width:400%;
+
+        display: flex;
+        position: relative;
+animation-name: sliderr;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+
+    }
+    main section div{
+        /* border: 2px solid blue; */
+        width: 100%;
+        
+    }
+
+    main section div:nth-child(1)
+    {
+        background: url('img/bck1.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    main section div:nth-child(2)
+    {
+        background: url('img/bck2.jpeg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    main section div:nth-child(3)
+    {
+        background: url('img/bck3.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    main section div:nth-child(4)
+    {
+        background: url('img/bck4.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    @keyframes sliderr {
+        0%,30%{
+            /* left: 0; */
+
+            transform: translateX(0);
+
+        }
+        33.3%,63%{    
+            /* left: -100%; */
+            transform: translateX(-25%);
+        }
+        66.6%,90%{    
+            /* left: -200%; */
+
+            transform: translateX(-50%);
+        }
+      93%, 100%{    
+            /* left: -300%; */
+
+            transform: translateX(-75%);
+        }
+        
+        
+    }
+
+
+</style>
+
+</head>
+<body>
+    
+<main>
+    <section>
+     <div></div>
+     <div></div>
+     <div></div>
+     <div></div>
+    </section>
+</main>
+
+</body>
+</html>
